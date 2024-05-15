@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import { Main } from "./containers";
+import { Main, Login } from "./containers";
 
 function App() {
   return (
@@ -9,8 +9,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to={"/home"} replace={true} />} />
         <Route path="/home" element={<Main />} />
-        {/* <Route path="/login" element={<Login />} />
-        <Route path="/dashboard/*" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
+        {/*<Route path="/dashboard/*" element={<Dashboard />} />
         <Route path="/checkout-success" element={<CheckOutSuccess />} /> */}
       </Routes>
     </div>
